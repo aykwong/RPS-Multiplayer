@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPS-Multiplayer</title>
+    <link type="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link type="stylesheet" href="assets/css/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBDPXt5k5IWvtxMkTJOw4lz5eDOJZYrP20",
+    authDomain: "rps-multiplayer-94c87.firebaseapp.com",
+    databaseURL: "https://rps-multiplayer-94c87.firebaseio.com",
+    projectId: "rps-multiplayer-94c87",
+    storageBucket: "",
+    messagingSenderId: "152671759232"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col mt-2">
+                    <h1 class="text-center" id="title">Rock, Paper Scissors War!</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="row">
+        <div class="col">
+            <form class="form-inline justify-content-center my-4">
+                <input class="form-control mr-1" type="input" placeholder="Username">
+                <button class="btn btn-primary" type="submit" value="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col">
+            <div class="text-center" id="score">
+                <span class="font-weight-bold" id="p1wins">0</span> vs
+                <span class="font-weight-bold" id="p2wins">0</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
